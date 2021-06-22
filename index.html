@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project planner</title>
+</head>
+<body>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <h2>Add a todo</h2>
+        <span class="close-modal">&times;</span>
+        <input type="text" name="" id="added-todo" placeholder = "Add a todo">
+        <button class="add-todo" onclick="addTodo(addedTodo.value)">Add todo</button>
+    </div>
+    <div class="planner-container">
+        <div class="planner-header">
+            <h2>Task planner</h2>
+            <div class="planner-header__titles">
+                <h1>Tasks</h1>
+                <h1>Not started</h1>
+                <h1>In progress</h1>
+                <h1>Completed</h1>
+            </div>
+        </div>
+        <div class="planner-body">
+            <div class="status" id="created-todo">
+                <button id="add-btn">&plus; Add todo</button>
+            </div>
+            <div class="status" id="not-started">
+            </div>
+            <div class="status" id = "in-progress">
+            </div>
+            <div class="status" id="completed">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
